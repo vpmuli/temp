@@ -1,8 +1,9 @@
+<span></span>
 <script>
 try {
-  const wakeLock = await navigator.wakeLock.request("screen");
-  document.body.innerHTML = 'ok';
+  const wakeLock = await navigator.wakeLock.request('screen');
+  document.querySelector('span').innerHTML = 'ok';
 } catch (err) {
-  document.body.innerHTML = err;
+  document.querySelector('span').innerHTML = err;
 }
 </script>
