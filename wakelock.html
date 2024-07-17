@@ -1,0 +1,6 @@
+try {
+  const wakeLock = await navigator.wakeLock.request("screen");
+  alert('ok')!
+} catch (err) {
+  alert(err);
+}
