@@ -1,8 +1,8 @@
 <script>
 try {
   const wakeLock = await navigator.wakeLock.request("screen");
-  alert('ok');
+  document.body.innerHTML = 'ok';
 } catch (err) {
-  alert(err);
+  document.body.innerHTML = err;
 }
 </script>
